@@ -4,7 +4,7 @@ const trackList = document.getElementById('track-list');
 // Функция для отображения треков
 function displayTracks() {
     const tracks = [
-        { title: "Meteor rain", file: "music/Meteor-Rain.mp3", image: "music/images/Meteor-Rain.png", date: "5 Октября 2024 года", bg_color: "background: rgb(59,47,67);background: linear-gradient(27deg, rgba(59,47,67,1) 0%, rgba(130,91,146,1) 86%); -webkit-box-shadow: 0px 0px 81px -5px rgba(191,94,191,1);-moz-box-shadow: 0px 0px 81px -5px rgba(191,94,191,1); box-shadow: 0px 0px 81px -5px rgba(191,94,191,1);" },
+        { title: "Meteor rain", file: "music/Meteor-Rain.mp3", image: "https://raw.githubusercontent.com/moralenn/klaydx-music/refs/heads/main/music/images/Meteor-rain.png", date: "5 Октября 2024 года", bg_color: "background: rgb(59,47,67);background: linear-gradient(27deg, rgba(59,47,67,1) 0%, rgba(130,91,146,1) 86%); -webkit-box-shadow: 0px 0px 81px -5px rgba(191,94,191,1);-moz-box-shadow: 0px 0px 81px -5px rgba(191,94,191,1); box-shadow: 0px 0px 81px -5px rgba(191,94,191,1);" },
         { title: "Silent night", file: "music/Silent-night.mp3", image: "music/images/Silent-night.png", date: "5 Октября 2024 года", bg_color: "background: rgb(17,24,34);background: linear-gradient(27deg, rgba(17,24,34,1) 0%, rgba(78,103,110,1) 86%); -webkit-box-shadow: 0px 0px 81px -5px rgba(26,108,122,1);-moz-box-shadow: 0px 0px 81px -5px rgba(26,108,122,1); box-shadow: 0px 0px 81px -5px rgba(26,108,122,1);" },
         // Добавьте свои треки здесь
     ];
