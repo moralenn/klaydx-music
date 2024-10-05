@@ -1,0 +1,265 @@
+html, body {
+    height: 100%; /* Устанавливаем высоту для html и body */
+    margin: 0; /* Убираем отступы */
+    padding: 0;
+    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в колонку */
+}
+
+.header-text {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+}
+
+header {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(48, 48, 48, 1) 100%);
+    color: #fff;
+    text-align: center;
+}
+
+main {
+    flex: 1; /* Основной контент занимает доступное пространство */
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(48, 48, 48, 1) 100%);
+    width: 100vw;
+    box-sizing: border-box; /* Убираем проблемы с переполнением ширины */
+}
+
+section {
+    margin: 20px 0;
+}
+
+h2, p {
+    color: #cfcfcf;
+    text-align: center;
+}
+
+.my-tracks {
+    font-size: 40px;
+    color: white;
+}
+
+.track-date {
+    font-size: 18px;
+    color: rgb(211, 211, 211);
+}
+
+.about_me {
+    color: white;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.about_me_2 {
+    color: white;
+    font-size: 18px;
+    padding-inline: 20px;
+    padding-bottom: 50px;
+}
+
+#about {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: rgb(33, 33, 33);
+    background: linear-gradient(27deg, rgba(33, 33, 33, 1) 0%, rgba(92, 48, 82, 1) 0%, rgba(33, 33, 33, 1) 100%, rgba(96, 96, 96, 1) 100%);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.track-container {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет блокам перенастраиваться */
+    justify-content: center; /* Центрируем блоки по горизонтали */
+    width: 100%; /* Убедитесь, что контейнер занимает всю доступную ширину */
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px; /* Отступы для предотвращения переполнения */
+    box-sizing: border-box; /* Убираем проблемы с переполнением ширины */
+}
+
+.track-item {
+    display: flex; /* Для расположения текста в строку */
+    align-items: center; /* Центрируем элементы по вертикали */
+    border-radius: 10px; /* Скругление углов блока трека */
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 100%; /* Ширина для блоков треков */
+    max-width: 600px;
+    height: 150px; /* Фиксированная высота для блоков треков */
+    position: relative; /* Для позиционирования текста над фоном */
+    overflow: hidden; /* Скрываем переполнение */
+    box-sizing: border-box; /* Убираем проблемы с переполнением */
+}
+
+.track-item:hover {
+    transform: scale(1.05);
+}
+
+.track-item img {
+    width: 150px; /* Ширина изображения */
+    height: 150px; /* Высота изображения */
+    object-fit: cover; /* Обеспечиваем правильное соотношение сторон */
+    border-radius: 10px; /* Скругление углов изображения */
+    margin-right: 10px; /* Отступ справа от изображения */
+}
+
+.track-item h3, .track-item audio {
+    position: relative; /* Позиционирование текста и аудиоплеера над фоном */
+    z-index: 1; /* Слой над фоном */
+    color: #fff; /* Цвет текста */
+    margin: 0; /* Убираем отступы */
+    margin-right: 20px;
+}
+
+.trackInfo {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    justify-content: flex-start; /* Начало контейнера */
+    margin-left: 10px; /* Отступ слева для текста */
+    color: #fff; /* Цвет текста */
+    height: auto; /* Позволяет контейнеру расти по высоте */
+    overflow: visible; /* Убедитесь, что содержимое видно */
+}
+
+.track-item h3 {
+    padding-bottom: 15px; /* Отступ между заголовком и аудиоплеером */
+    font-size: 25px;
+}
+
+.footer-text {
+    color: white;
+}
+
+.footer-text-bg {
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    border-radius: 100px;
+    height: 80px;
+    margin: auto;
+    margin-top: 70px;
+    background: rgb(33, 33, 33);
+    background: linear-gradient(27deg, rgba(33, 33, 33, 1) 0%, rgba(96, 96, 96, 1) 86%);
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: rgb(176, 176, 176);
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: #fdfdfd;
+    border-radius: 50%;
+}
+
+.header-welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0 auto;
+    background-image: url('music/images/KlaydxHeader.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    margin-bottom: 75px;
+    max-width: 100%;
+    overflow: hidden;
+}
+.header-welcome h1, .header-welcome #about {
+    position: relative;
+    z-index: 2;
+}
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+    .header-text {
+        font-size: 40px;
+    }
+
+    .my-tracks {
+        font-size: 35px;
+    }
+
+    .about_me {
+        font-size: 35px;
+    }
+
+    .about_me_2 {
+        font-size: 16px;
+        padding-inline: 15px;
+    }
+
+    .track-item {
+        width: 100%;
+        height: auto;
+        flex-direction: column; /* Ставим изображение и текст друг под другом */
+    }
+
+    .track-item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .trackInfo {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .header-welcome {
+        flex-direction: column; /* Изменяем направление элементов для мобильных */
+        text-align: center;
+    }
+
+    .header-welcome::before {
+        height: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .columns-2 .track-item, .columns-4 .track-item {
+        flex: 0 0 100%;
+    }
+
+    .header-text {
+        font-size: 30px;
+    }
+
+    .about_me {
+        font-size: 30px;
+    }
+
+    .my-tracks {
+        font-size: 30px;
+    }
+
+    .about_me_2 {
+        font-size: 14px;
+    }
+
+    .footer-text-bg {
+        width: 90%;
+    }
+
+    .header-welcome::before {
+        height: 350px;
+    }
+}
